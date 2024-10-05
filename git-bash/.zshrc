@@ -1,3 +1,7 @@
+TITLE="shy-cfg"
+
+echo "[$TITLE] init"
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
@@ -149,4 +153,11 @@ autoload -U add-zsh-hook
 add-zsh-hook chpwd nvm_auto_use
 
 # Also run the function for the current directory on shell start
-nvm_auto_use 
+nvm_auto_use
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
+
+echo "[$TITLE] finish"
+# echo "\^o^/"
